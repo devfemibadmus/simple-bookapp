@@ -1,0 +1,36 @@
+name: books
+description: Book Bn Li Mubarak.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0-0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  transparent_image: ^2.0.0
+  http: ^0.13.5
+  path_provider: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.8.0
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/playstore.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/book.jpg
+    - assets/favorite.json
+    - assets/counter.txt
